@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Mea+Culpa&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="cursor"></div>
+    <div class="main">
+    <header>
+      <table>
+        <tr>
+        <th>H.</th>
+        <td>(1)Home</td>
+        <td>(2)Contact</td>
+        <td>(3)Work</td>
+        <td>(1)Home</td>
+        </tr>
+      </table>
+    </header>
+
+    <div class="main_1">
+        <h1>Crafting <span class="one">digital experiences</span> with precision, simplicity & performance<span class="two">|</span></h1>
+        <h2>[*]Turning ideas into clean, scalable and engaging digital experiences using modern frontend technologies and thoughtful UI design.</h2>
+        <!-- <img src="Img/arr1.png" alt=""> -->
+        <p>Resume↓</p>
+    </div>   
+
+    <div class="circle">
+        <div class="text">
+            <p>Himanshu Sonar - Creative Web Developer-</p>
+        </div>
+    </div>
+
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="blue" fill-opacity="1" d="M0,160L48,149.3C96,139,192,117,288,117.3C384,117,480,139,576,133.3C672,128,768,96,864,85.3C960,75,1056,85,1152,101.3C1248,117,1344,139,1392,149.3L1440,160L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"></path></svg>
+    <svg viewBox="0 0 500 500">
+ <path id="curve" d="M50,150 Q250,-100 450,150" fill="transparent" />
+ <text font-size="24" fill="blue">
+   <textPath href="#curve">Curved Text Example</textPath>
+ </text>
+</svg>
+
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="blue" fill-opacity="1" d="M0,192L48,160C96,128,192,64,288,64C384,64,480,128,576,149.3C672,171,768,149,864,133.3C960,117,1056,107,1152,117.3C1248,128,1344,160,1392,176L1440,192L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
+
+
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.7/gsap.min.js" integrity="sha512-f6bQMg6nkSRw/xfHw5BCbISe/dJjXrVGfz9BSDwhZtiErHwk7ifbmBEtF9vFW8UNIQPhV2uEFVyI/UHob9r7Cw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<script src="script.js"></script>
+<script>
+const text_1=document.querySelector('.text p');
+    text_1.innerHTML = text_1.innerText.split('').map(
+    (char,i)=>
+    `<span style="transform:rotate(${i*8.7}deg)">${char}</span>`
+    ).join('');</script>
+</body>
+</html>
